@@ -6,7 +6,7 @@ import './App.css';
 function NamecardUI(props) {
   
 
-  if (props.pagenumber == 1){
+  if (props.pagenumber === 1){
     
     console.log('t2')
     
@@ -17,7 +17,7 @@ function NamecardUI(props) {
     )
   }
 
-  if (props.pagenumber == 2){
+  if (props.pagenumber === 2){
     return( 
       <div>
         {Page2()}
@@ -39,26 +39,31 @@ function NamecardUI(props) {
       <div className='smallerpage'>
       <div className="page1">
       
-      <Namecardcell
-      name={'jonh'}
+      page1...
+      <Namecardcell name={'jonh'}
       post={'jonh'}
       phone={'jonh'}
-      company={'jonh'}
-      />
+      company={'jonh'}/>
       
-      <Namecardcell
-      name={'jonh'}
+      <Namecardcell name={'jonh'}
       post={'jonh'}
       phone={'jonh'}
-      company={'jonh'}
-      />
-            
-      <Namecardcell
-      name={'jonh'}
+      company={'jonh'}/>
+      
+      <Namecardcell name={'jonh'}
       post={'jonh'}
       phone={'jonh'}
-      company={'jonh'}
-      />
+      company={'jonh'}/>
+      
+      <Namecardcell name={'jonh'}
+      post={'jonh'}
+      phone={'jonh'}
+      company={'jonh'}/>
+
+      <Namecardcell name={'jonh'}
+      post={'jonh'}
+      phone={'jonh'}
+      company={'jonh'}/>
       </div>
       </div>
     );
@@ -77,13 +82,15 @@ function NamecardUI(props) {
   }
 
 function Namecardcell(props){
+  return(
   <div className="namecardcell">
   
-  name:{props.name}
-  post:{props.post}
-  phone:{props.phone}
-  company:{props.company}
+  name:{props.name}<br/>
+  post:{props.post}<br/>
+  phone:{props.phone}<br/>
+  company:{props.company}<br/>
 
-</div>
+  </div>
+  )
 }
 export default  NamecardUI;

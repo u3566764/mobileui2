@@ -40,9 +40,12 @@
 .smallerpage{
   height:90vh;
   background-color: #484c53;
+  
+  overflow: auto;
 }
 
 .namecardcell{
   height: 20vh;
   background-color: white ;
+  margin: 1vh;
 }
