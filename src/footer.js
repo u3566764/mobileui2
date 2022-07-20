@@ -5,19 +5,30 @@ import { render } from '@testing-library/react';
 
 
 
-function Footer() {
-  const roundbutton1 = document.querySelector(".roundbutton1");
-  const roundbutton2 = document.querySelector(".roundbutton2");
-  const roundbutton3 = document.querySelector(".roundbutton3");
-  const roundbutton4 = document.querySelector(".roundbutton4");
+function Footer(props) {
+  useEffect(() => {
+    var pagenumber = props.pagenumber
 
+    var pagenumbercallback = props.parentpagenumbercallback
+    
+    const roundbutton1 = document.querySelector(".roundbutton1");
+    const roundbutton2 = document.querySelector(".roundbutton2");
+    const roundbutton3 = document.querySelector(".roundbutton3");
+    const roundbutton4 = document.querySelector(".roundbutton4");
+  
+  
+    roundbutton1.addEventListener('click', () => {
+      console.log("aa")
+      pagenumbercallback(1)
+      });
+      
+    roundbutton2.addEventListener('click', () => {
+      console.log("aa")
+      pagenumbercallback(2)
+      });
+  
+  });
 
-  roundbutton1.addEventListener('click', () => {
-    console.log("aa")
-    });
-  roundbutton2.addEventListener('click', () => {
-    console.log("aa")
-    });
     return (
       <div className="Footer">
         

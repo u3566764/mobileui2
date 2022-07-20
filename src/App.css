@@ -38,6 +38,11 @@
 }
 
 .smallerpage{
-  height: 80%;
-  background-color: #282c34;
+  height:90vh;
+  background-color: #484c53;
+}
+
+.namecardcell{
+  height: 20vh;
+  background-color: white ;
 }

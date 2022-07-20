@@ -1,18 +1,26 @@
 import { render } from '@testing-library/react';
-import React ,{useEffect, useState} from 'react';
+import React ,{useEffect, useState, useCallback} from 'react';
 import './App.css';
 import Footer from './footer';
 import NamecardUI from './namecardUI'
 
 
 function App() {
+  const [pagenumber, setPagenumber] = useState(0);
+
+  const pagenumbercallback = useCallback((pagenumber) => {
+    setPagenumber(pagenumber);
+  }, []);
 
   return (
     <div className="App">
       
-      <NamecardUI pagenumber= {0} />
+      <NamecardUI pagenumber= {pagenumber} 
+      />
 
-      <Footer/>
+      <Footer
+      parentpagenumbercallback = {pagenumbercallback}
+      />
     </div>
   );
 }
