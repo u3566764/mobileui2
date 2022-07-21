@@ -1,8 +1,5 @@
-import * as THREE from 'three';
-//const scene = new THREE.Scene();
-
-import * as minecraft from './webgl_geometry_minecraft.html'
-
+import ReactCSSTransitionGroup from 'react-transition-group'; // ES6
+var ReactCSSTransitionGroup = require('react-transition-group'); // ES5 with npm
 
 function Page2() {
     return (

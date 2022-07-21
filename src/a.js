@@ -1,31 +1,43 @@
-import { useCallback, useState } from "react";
+import ReactCSSTransitionGroup from 'react-transition-group'; // ES6
+var ReactCSSTransitionGroup = require('react-transition-group'); // ES5 with npm
 
-const Counter = ({ parentCallback }) => {
-  const [count, setCount] = useState(0);
+class TodoList extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {items: ['hello', 'world', 'click', 'me']};
+    this.handleAdd = this.handleAdd.bind(this);
+  }
 
-  return (
-    <button
-      onClick={() => {
-        setCount((count) => count + 1);
-        parentCallback(count + 1);
-      }}
-    >
-      increment
-    </button>
-  );
-};
+  handleAdd() {
+    const newItems = this.state.items.concat([
+      prompt('Enter some text')
+    ]);
+    this.setState({items: newItems});
+  }
 
-export default function App() {
-  const [count, setCount] = useState(0);
+  handleRemove(i) {
+    let newItems = this.state.items.slice();
+    newItems.splice(i, 1);
+    this.setState({items: newItems});
+  }
 
-  const callback = useCallback((count) => {
-    setCount(count);
-  }, []);
+  render() {
+    const items = this.state.items.map((item, i) => (
+      <div key={i} onClick={() => this.handleRemove(i)}>
+        {item}
+      </div>
+    ));
 
-  return (
-    <div className="App">
-      <Counter parentCallback={callback} />
-      <h2>count {count}</h2>
-    </div>
-  );
+    return (
+      <div>
+        <button onClick={this.handleAdd}>Add Item</button>
+        <ReactCSSTransitionGroup
+          transitionName="example"
+          transitionEnterTimeout={500}
+          transitionLeaveTimeout={300}>
+          {items}
+        </ReactCSSTransitionGroup>
+      </div>
+    );
+  }
 }
