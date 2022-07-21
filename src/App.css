@@ -77,3 +77,14 @@
   align-items: center;
   flex-wrap: wrap;
 }
+
+.personaldataNFTcell{
+  height: 10vh;
+  width: 20vw;
+  
+  background-color: white;
+  margin-top: 1vh;
+  margin-left: 1vw;
+  margin-right: 1vw;
+
+}

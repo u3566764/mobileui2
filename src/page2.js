@@ -1,33 +1,22 @@
-import ReactCSSTransitionGroup from 'react-transition-group'; // ES6
-var ReactCSSTransitionGroup = require('react-transition-group'); // ES5 with npm
 
 function Page2() {
     return (
       <div className='smallerpage'>
       <div className="page3">
       
-      page2...
-      <Namecardcell name={'jonh'}
+      PersonaldataNFTcell
+      
+      <PersonaldataNFTcell name={'jonh'}
       post={'jonh'}
       phone={'jonh'}
       company={'jonh'}/>
       
-      <Namecardcell name={'jonh'}
-      post={'jonh'}
-      phone={'jonh'}
-      company={'jonh'}/>
-      
-      <Namecardcell name={'jonh'}
-      post={'jonh'}
-      phone={'jonh'}
-      company={'jonh'}/>
-      
-      <Namecardcell name={'jonh'}
+      <PersonaldataNFTcell name={'jonh'}
       post={'jonh'}
       phone={'jonh'}
       company={'jonh'}/>
 
-      <Namecardcell name={'jonh'}
+      <PersonaldataNFTcell name={'jonh'}
       post={'jonh'}
       phone={'jonh'}
       company={'jonh'}/>
@@ -36,9 +25,9 @@ function Page2() {
     );
   }
 
-  function Namecardcell(props){
+  function PersonaldataNFTcell(props){
     return(
-    <div className="namecardcell">
+    <div className="personaldataNFTcell">
     
     name:{props.name}<br/>
     post:{props.post}<br/>
