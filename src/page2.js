@@ -1,3 +1,7 @@
+import * as THREE from 'three';
+
+const scene = new THREE.Scene();
+
 function Page2() {
     return (
       <div className='smallerpage'>

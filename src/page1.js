@@ -4,10 +4,11 @@ function Page1() {
       <div className="page1">
       
       page1...
-      <Namecardcell name={'jonh'}
+      <Mynamecardcell name={'jonh'}
       post={'jonh'}
       phone={'jonh'}
-      company={'jonh'}/>
+      company={'jonh'}
+      />
       
       <Namecardcell name={'jonh'}
       post={'jonh'}
@@ -33,6 +34,20 @@ function Page1() {
     );
   }
 
+
+  
+  function Mynamecardcell(props){
+    return(
+    <div className="mynamecardcell">
+    
+    name:{props.name}<br/>
+    post:{props.post}<br/>
+    phone:{props.phone}<br/>
+    company:{props.company}<br/>
+  
+    </div>
+    )
+  }
   function Namecardcell(props){
     return(
     <div className="namecardcell">
