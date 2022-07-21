@@ -1,6 +1,8 @@
 import * as THREE from 'three';
+//const scene = new THREE.Scene();
 
-const scene = new THREE.Scene();
+import * as minecraft from './webgl_geometry_minecraft.html'
+
 
 function Page2() {
     return (
