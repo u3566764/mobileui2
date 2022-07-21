@@ -2,7 +2,7 @@ import { render } from '@testing-library/react';
 import React ,{useEffect, useState, useCallback} from 'react';
 import './App.css';
 import Footer from './footer';
-import NamecardUI from './namecardUI'
+import SmallpageUI from './namecardUI'
 
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       
-      <NamecardUI pagenumber= {pagenumber} 
+      <SmallpageUI pagenumber= {pagenumber} 
       />
 
       <Footer
