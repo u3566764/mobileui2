@@ -18,15 +18,20 @@ function Footer(props) {
   
   
     roundbutton1.addEventListener('click', () => {
-      console.log("aa")
       pagenumbercallback(1)
       });
       
     roundbutton2.addEventListener('click', () => {
-      console.log("aa")
       pagenumbercallback(2)
       });
   
+    roundbutton3.addEventListener('click', () => {
+      pagenumbercallback(3)
+      });
+      
+    roundbutton4.addEventListener('click', () => {
+      pagenumbercallback(4)
+      });
   });
 
     return (

@@ -49,3 +49,23 @@
   background-color: white ;
   margin: 1vh;
 }
+
+.miniappcell{
+  height: 10vh;
+  width: 10vh;
+  padding: 1vh;
+}
+
+.miniappicon{
+  height: 10vh;
+  width: 10vh;
+}
+
+.page4{
+  display: flex;
+  gap: 16px;
+  
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}

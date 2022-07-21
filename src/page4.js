@@ -2,10 +2,15 @@ function Page4() {
   return (
     <div className='smallerpage'>
     <div className="page4">
-    
-    page4...
-    {//<Miniappcell appname={'jonh'}/>
-    }
+    <Miniappcell appname={'jonh'}/>
+
+    <Miniappcell appname={'jonh'}/>
+    <Miniappcell appname={'jonh'}/>
+    <Miniappcell appname={'jonh'}/>
+    <Miniappcell appname={'jonh'}/>
+    <Miniappcell appname={'jonh'}/>
+    <Miniappcell appname={'jonh'}/>
+    <Miniappcell appname={'jonh'}/>    
 
     </div>
     </div>
@@ -17,7 +22,7 @@ function Miniappcell(props){
   <div className="miniappcell">
   
   <div className="miniappicon">
-    <img src="miniappicon2.png" alt="defaulticon" />
+    <img src="miniappicon2.png"width={'80vh'} height={'80vh'} alt="defaulticon" />
   </div>
   appname:{props.appname}<br/>
 

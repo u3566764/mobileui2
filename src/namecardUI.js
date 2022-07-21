@@ -11,10 +11,7 @@ import Page4 from './page4';
 function SmallpageUI(props) {
   
 
-  if (props.pagenumber === 1){
-    
-    console.log('t2')
-    
+  if (props.pagenumber === 1){    
     return( 
     <div>
       {Page1()}
